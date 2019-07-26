@@ -1,0 +1,363 @@
+/* #d63031 */
+
+/* ---------------------------------------*/
+/* basic setup*/
+/* ---------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ---------------------------------------*/
+/* reusable components*/
+/* ---------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ----- HEADINGS -----*/
+
+h1,
+h2,
+h3 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 110%;    
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #d63031;
+    content: " ";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #d63031;
+    margin-bottom: 10px;
+}
+/* ----- HEADINGS -----*/
+
+
+/* ----- BUTTONS -----*/
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #d63031;
+    border: 1px solid #d63031;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #d63031;
+    color: #d63031;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #be2627;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #be2627;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #be2627;
+    border: 1px solid #be2627;
+    color: #fff;
+}
+
+/* ----- BUTTONS -----*/
+
+
+/* ---------------------------------------*/
+/* reusable components*/
+/* ---------------------------------------*/
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/0001.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.alera-header {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #d63031;   
+}
+.sticky {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: #555;    
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+/* ---------------------------------------*/
+/* hair-showcase*/
+/* ---------------------------------------*/
+.hair-photo {
+    padding: 0;
+}
+.hair-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.hair-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.hair-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.hair-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.hair-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ---------------------------------------*/
+/* footer*/
+/* ---------------------------------------*/
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    display: inline-block;
+    margin-right: 0; 
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 170%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-linkedin{
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+
+.ion-social-linkedin:hover{
+    color: #007bb6;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;    
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 100px;
+}
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10 px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success { background-color: rgba(38, 191, 68, 0.8); }
+
+.error { background-color: rgba(209, 46, 46, 0.8); }
+
+*:focus {outline: none;}
